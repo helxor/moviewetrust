@@ -313,12 +313,16 @@ Please share the website to your friends and etc.</p><br>
     <script type="text/javascript">$(window).load(function(){        
    $('#myModal').modal('show');
     });</script>
+<!-- WhatsHelp.io widget -->
 <script type="text/javascript">
     (function () {
         var options = {
-            facebook: "907875089544824",
-            call_to_action: "Message us",
-            position: "left",
+            facebook: "907875089544824", // Facebook page ID
+            email: "moviewetrust@yandex.com", // Email
+            call_to_action: "Message us here!", // Call to action
+            button_color: "#000000", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "facebook,email", // Order of buttons
         };
         var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
@@ -326,5 +330,6 @@ Please share the website to your friends and etc.</p><br>
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
+<!-- /WhatsHelp.io widget -->
 </body>
 </html>
