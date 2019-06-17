@@ -326,7 +326,7 @@ const Movie = ({
   return (
     <Wrapper>
       <Helmet>
-        <title>{`${movie.title} - moviewetrust.tk`}</title>
+        <title>{`${movie.title} - moviewetrust.gq`}</title>
       </Helmet>
       <LazyLoad height={500}>
         <MovieWrapper>
