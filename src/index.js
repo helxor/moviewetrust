@@ -18,12 +18,12 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <Fragment>
         <Helmet>
-          <title>moviewetrust.tk - stream and download movies for free </title>
+          <title>moviewetrust.gq - stream and download movies for free </title>
           <meta
             name="description"
-            content="A moviewetrust.tk where you can check all your favorite movies and stream it and download it for free"
+            content="A moviewetrust.gq where you can check all your favorite movies and stream it and download it for free"
           />
-          <link rel="canonical" href="https://moviewetrust.tk" />
+          <link rel="canonical" href="https://moviewetrust.gq" />
         </Helmet>
         <App />
         <GlobalStyle />
