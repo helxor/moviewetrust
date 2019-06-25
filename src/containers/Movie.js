@@ -431,7 +431,7 @@ function renderImdb(id) {
     return null;
   }
   return (
-    <AWrapper target="_blank" href={`https://ko-fi.com/Q5Q4WP5K`}>
+    <AWrapper target="_blank" href={`https://rebrand.ly/supportmoviewetrust`}>
       <Button title="Donate" icon={['fab', 'imdb']} />
     </AWrapper>
   );
@@ -457,7 +457,7 @@ function renderMovie1(id) {
   }
   return (
     <center>
-     <Text>Tip 1: If you don't like the movie quality just change the movie source. Recommended Source (Openload) <br /> Tip 2: If you experience popup ads from video, Restart your browser and please install the pop up blocker extensions don't forget to install the extension movie downloader if you want to download the movies! thank you.</Text></center>
+     <Text>Tip 1: If you don't like the movie quality just change the movie source. Recommended Source (Openload) <br /> Tip 2: If you experience popup ads from video, Restart your browser read the instruction and please install the pop up blocker extensions don't forget to install the movie downloader extention if you want to download the movies! thank you.</Text></center>
   );
 }
 
