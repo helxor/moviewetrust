@@ -179,7 +179,7 @@ const MenuMobile = ({ genres, staticCategories, selected }) => {
         <StyledCoffe
           target="_blank"
           rel="noopener noreferrer"
-          href="https://moviewetrust.gq/donate/">
+          href="https://www.buymeacoffee.com/abstrakt">
           <img
             src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
             alt="Buy me a coffee"
