@@ -431,7 +431,7 @@ function renderImdb(id) {
     return null;
   }
   return (
-    <AWrapper target="_blank" href={`https://rebrand.ly/supportmoviewetrust`}>
+    <AWrapper target="_blank" href={`https://www.buymeacoffee.com/abstrakt`}>
       <Button title="Donate" icon={['fab', 'imdb']} />
     </AWrapper>
   );
