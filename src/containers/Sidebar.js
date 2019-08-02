@@ -104,18 +104,17 @@ const Sidebar = ({ genres, staticCategories, selected }) => {
         <StyledCoffe
           target="_blank"
           rel="noopener noreferrer"
-          href="https://ko-fi.com/Q5Q4WP5K"
+          href="https://www.buymeacoffee.com/fidalgodev"
         >
           <img
-            src="https://az743702.vo.msecnd.net/cdn/kofi5.png?v=2"
-            style={{border:'0px',height:'36px'}}
-            alt="Buy me a coffee ko-fi"
+            src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
+            alt="Buy me a coffee"
           />
-          <span style={{ marginLeft: '5px' }}></span>
+          <span style={{ marginLeft: '5px' }}>Buy me a coffee</span>
         </StyledCoffe>
         <CopyRight>
           Copyright ©
-          <StyledLink href="http://bit.ly/moviewetrust-fb">
+          <StyledLink href="https://www.buymeacoffee.com/abstrakt">
             moviewetrust
           </StyledLink>
         </CopyRight>
