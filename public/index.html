@@ -116,7 +116,7 @@ table,thead,tbody,tfoot,tr, td,th{
 }
         
 .pg{position:absolute;height:50px; width:40%; right:-10px;bottom:0px;z-index:2}
-.pg > img{height:540px;}
+.pg > img{height:550px;}
 
  .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
  .text-block h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
@@ -232,26 +232,20 @@ window.onresize = function(event) {
     <script type="text/javascript">$(window).load(function(){        
    $('#myModal').modal('show');
     });</script>
-<!-- Rocketbots.io widget -->
+<!-- WhatsHelp.io widget -->
 <script type="text/javascript">
     (function () {
         var options = {
-            facebook: "moviewetrust", // Facebook page ID
-            email: "moviewetrust@protonmail.com", // Email
-            company_logo_url: "//moviewetrust.gq/favicon-32x32.png", // URL of company logo (png, jpg, gif)
-            greeting_message: "Hello, If you have questions or suggestions feel free to send us message.", // Text of greeting message
+            facebook: "907875089544824", // Facebook page ID
             call_to_action: "Message us", // Call to action
-            button_color: "#000000", // Color of button
-            ga: true, // Google Analytics enabled
-            shift_vertical: 0, // Vertical position, px
-            shift_horizontal: 1260, // Horizontal position, px
+            position: "left", // Position may be 'right' or 'left'
         };
-        var proto = document.location.protocol, host = "//widget.rocketbots.io", url = proto + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/init.js';
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
         s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
-<!-- /Rocketbots.io widget -->
+<!-- /WhatsHelp.io widget -->
 </body>
 </html>
