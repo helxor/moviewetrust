@@ -116,7 +116,7 @@ table,thead,tbody,tfoot,tr, td,th{
 }
         
 .pg{position:absolute;height:50px; width:40%; right:-10px;bottom:0px;z-index:2}
-.pg > img{height:523px;}
+.pg > img{height:540px;}
 
  .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
  .text-block h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
@@ -208,8 +208,8 @@ window.onresize = function(event) {
 
 <div class="text-block"><h3>Are you new in this site?</h3>
                      <p> If you are new here, Please choose if you are using (Desktop or Mobile) for tutorials.</p>
-</div>  </div>    <button type="button" class="btn btn-info">Desktop</button> or 
-<button type="button" class="btn btn-danger">Mobile</button>
+</div>  </div>    <button type="button" class="btn btn-info" onclick="window.open('https://moviewetrust.gq/desktop/', '_blank')">Desktop</button> or 
+<button type="button" class="btn btn-danger" onclick="window.open('https://moviewetrust.gq/mobile/', '_blank')">Mobile</button>
 <br><hr class="style3">
 
 <div class="text-block"><h3>Existing User <br>or <br> Done Installing Extensions?</h3>
@@ -239,11 +239,12 @@ window.onresize = function(event) {
             facebook: "moviewetrust", // Facebook page ID
             email: "moviewetrust@protonmail.com", // Email
             company_logo_url: "//moviewetrust.gq/favicon-32x32.png", // URL of company logo (png, jpg, gif)
-            greeting_message: "Hello, If you have problems or any questions feel free to send us message.", // Text of greeting message
+            greeting_message: "Hello, If you have questions or suggestions feel free to send us message.", // Text of greeting message
             call_to_action: "Message us", // Call to action
-            button_color: "#1F1C18", // Color of button
-            position: "left", // Position may be 'right' or 'left'
+            button_color: "#000000", // Color of button
             ga: true, // Google Analytics enabled
+            shift_vertical: 0, // Vertical position, px
+            shift_horizontal: 1260, // Horizontal position, px
         };
         var proto = document.location.protocol, host = "//widget.rocketbots.io", url = proto + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/init.js';
