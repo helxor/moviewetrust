@@ -114,6 +114,34 @@ table,thead,tbody,tfoot,tr, td,th{
   font: 100 1.2rem/2 Roboto;
   margin: 5rem auto;
 }
+        
+.pg{position:absolute;height:50px; width:40%; right:-10px;bottom:0px;z-index:2}
+.pg > img{height:523px;}
+
+ .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
+ .text-block h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
+ .text-block h1 small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
+ .text-block h3{margin:0;font-weight:700;}
+ .text-block p{font-weight:300; width:60%}
+ .text-block button{transition: all .35s cubic-bezier(.37,.26,.35,1);border:4px solid #fff; padding:10px; background:transparent;font-family: 'Rubik', sans-serif;text-transform:uppercase; font-weight:700; cursor:pointer;}
+ .text-block button:hover{background:#B51D2A}
+
+@-webkit-keyframes backAn {
+  0%   { background-size:100% }
+  50%   { background-size:250% }
+  100%   { background-size:100% }
+}
+
+@keyframes backAn {
+  0%   { background-size:100% }
+  50%   { background-size:250% }
+  100%   { background-size:100% }
+}
+
+hr.style3 {
+  border-top: 1px dashed #8c8b8b;
+  width: 50%;
+}
 </style>
 
     <script type="text/javascript">
@@ -163,129 +191,41 @@ window.onresize = function(event) {
   <div id="myModal" class="modal fade" role="dialog" data-backdrop="static">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <center><h4 class="modal-title">READ THIS FIRST</h4></center>
-      </div>
-      <div class="modal-body">
-        <img src="%PUBLIC_URL%/s.png" class="img-responsive" alt="Movie We Trust Instruction" 
-             width="600" height="240" />
-      </div>
-      <hr style="border: 2px solid black;">
-      <div class="modal-body"> <center><h3>Buy me a coffee, Please?</h3><br><p>@donate here any value will be appreciated. <br>
-Please share the website to your friends and etc.<br></p><br>
-<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#000000 !important;background-color:#FFDD00 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#000000 !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://rebrand.ly/supportmoviewetrust"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a></center><br>             
-          <hr style="border: 2px solid black;">
-       <center> <h3>This is instruction for Mobile Users </h3></center>
-       <center><p>(Android, Ios)<br><code>Please follow the instructions:</code><br><code>(Recommended Browser: <b>Yandex Browser App for intalling extensions</b>)</code></p></center><br>
-        <table>          
-    <thead>
-      <tr><td colspan="3"><b>1. Install Yandex Browser</b></td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="https://rebrand.ly/yandex-browser-ios" target="_blank"><button type="button" class="btn btn-dark">IOS</button>
-        <td><a href="https://rebrand.ly/yandex-browser" target="_blank"><button type="button" class="btn btn-dark">ANDROID</button>
-</td></a>
-      </tr>
-      <thead>
-      <tr><td colspan="3"><b>2. Install Adblock Extension</b></td></tr>
-    </thead>
-    <tr>
-        <td colspan="3"><a href="https://rebrand.ly/adblock-chrome" target="_blank"><button type="button" class="btn btn-dark">Install in IOS or ANDROID</button>
-</td></a>
-      </tr>
-      <thead>
-      <tr><td colspan="3"><b>3. Install Movie Downloader</b></td></tr>
-    </thead>
-    <tr>
-        <td colspan="3"><a href="https://rebrand.ly/moviedownloader" target="_blank"><button type="button" class="btn btn-dark">Install in IOS or ANDROID</button>
-</td></a>
-      </tr>
-  </table>
-      
-        <br>
+               <div class="modal-body">
+                      <div class="shine"></div>
 
-  <center><p><b><i>Reminder: If you want to download the movie <br> Just play video first then go to movie downloader extension.</p></i></b></center>
+                          <div class="text-block">
+                    
+                     <h1>WELCOME</h1>
+                     <div class="pg">
+      <img src="http://riccardotartaglia.it/img/deadpool/deadpool.png">
+   </div>
+                     
+                     <p>Stream and download <br>your favorite movies for free here.<br></p>
 
-  <br>
+<hr class="style3">
+            
 
-           <center><h3>Video Tutorial in Mobile</h3>
-            <a href="https://rebrand.ly/mobiletutorial" target="_blank"><button type="button" class="btn btn-dark">Click here to watch - Mobile</button></a>
-           </center>
+<div class="text-block"><h3>Are you new in this site?</h3>
+                     <p> If you are new here, Please choose if you are using (Desktop or Mobile) for tutorials.</p>
+</div>  </div>    <button type="button" class="btn btn-info">Desktop</button> or 
+<button type="button" class="btn btn-danger">Mobile</button>
+<br><hr class="style3">
 
-  
+<div class="text-block"><h3>Existing User <br>or <br> Done Installing Extensions?</h3>
+<p> If you already user in this site or done watching the tutorial, You can now enter the website.</p></div>
+<button type="button" class="btn btn-info" data-dismiss="modal">Enter Website</button>
+<br><hr class="style3">
+
+<div class="text-block"><h3>Buy me a coffee!</h3>
+<p>Since this website not running own ads to sustain the expenses, We have only a little budget in our pockets, We really need your help to keep the site running. Any value will be really appreciated! Thank you.</p></div>
+<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#000000 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9px !important;font-size: 17px !important;letter-spacing:-0.08px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Lato', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/boredengineer"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
 
 
-
-
-  <hr style="border: 2px solid black;">
-
-         <center><h3>This Instruction for Desktop Users</h3></center>
-         <center><p>(Windows, Mac, Linux)<br><code>1. Please follow the instructions</code><br><code>(Recommended Browser: <b>FIREFOX, CHROME</b>)</code></p></center><br>
-         <center><p>Please install the browser (Firefox, Chrome) If you don't have it.<br><br><br></p></center>
-
-
-         <table>          
-    <thead>
-      <tr><td colspan="3"><b>1. Choose a browser</b></td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="https://www.google.com/chrome/" target="_blank"><button type="button" class="btn btn-dark">CHROME</button>
-        <td><a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank"><button type="button" class="btn btn-dark">FIREFOX</button>
-</td></a>
-      </tr>
-      <thead>
-      <tr><td colspan="3"><b>2. Install Adblock Extension</b></td></tr>
-    </thead>
-    <tr>
-        <td colspan="3"><a href="https://rebrand.ly/adblock-chrome" target="_blank"><button type="button" class="btn btn-dark">Install in CHROME</button>
-</td></a>
-        </tr><tr><td colspan="3"><a href="https://rebrand.ly/adblock-firefox" target="_blank"><button type="button" class="btn btn-dark">Install in FIREFOX</button>
-</td></a>
-      </tr>
-      <thead>
-      <tr><td colspan="3"><b>3. Install Movie Downloader</b></td></tr>
-    </thead>
-    <tr>
-        <td colspan="3"><a href="https://rebrand.ly/moviedownloader-google" target="_blank"><button type="button" class="btn btn-dark">Install in CHROME</button>
-</td></a></tr><tr><td colspan="3"><a href="https://rebrand.ly/moviedownloader-firefox" target="_blank"><button type="button" class="btn btn-dark">Install in FIREFOX</button>
-</td></a>
-      </tr>
-  </table>
-
-  <br>
-
-  <center><p><b><i>Reminder: If you want to download the movie <br> Just play video first then go to movie downloader extension.</p></i></b></center>
-
-  <br>
-
-  <center><h3>Video Tutorial in Desktop</h3>
-            <a href="https://rebrand.ly/desktoptutorial" target="_blank"><button type="button" class="btn btn-dark">Click here to watch - Desktop</button></a>
-           </center>
-
-        
-                <hr style="border: 2px solid black;">
-
-        <center><h3>How to bypass I'm not a robot captcha?</h3><br><p>If you want to bypass the captcha, Just login any gmail account.</p><br>
-        <hr style="border: 2px solid black;">
-                      <p>If you have suggestions, questions and requests. <br>You can direct message us, you can see it in the sidebar. <br>Please follow our facebook and twitter page.</p>
-                      <table>
-                        <tr><td>
-                      <a href="http://bit.ly/moviewetrust-fb" target="_blank"><img src="%PUBLIC_URL%/icons/facebook.svg" class="img-responsive" alt="Responsive image" 
-             width="50" height="50" />@moviewetrust</a></td><td><a href="http://bit.ly/moviewetrust-twitter" target="_blank"><img src="%PUBLIC_URL%/icons/twitter.png" class="img-responsive" alt="Responsive image" 
-             width="50" height="50" />@moviewetrust</a></td></tr></table></center>
-</div>
-       </center>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
+            </div>
+          </div>
+            </div>
+      </div></div> 
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
     <div id="root"></div>
