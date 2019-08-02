@@ -104,7 +104,7 @@ const Sidebar = ({ genres, staticCategories, selected }) => {
         <StyledCoffe
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.buymeacoffee.com/fidalgodev"
+          href="https://www.buymeacoffee.com/abstrakt"
         >
           <img
             src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
@@ -114,7 +114,7 @@ const Sidebar = ({ genres, staticCategories, selected }) => {
         </StyledCoffe>
         <CopyRight>
           Copyright ©
-          <StyledLink href="https://www.buymeacoffee.com/abstrakt">
+          <StyledLink href="http://bit.ly/moviewetrust-fb">
             moviewetrust
           </StyledLink>
         </CopyRight>
