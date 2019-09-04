@@ -458,11 +458,9 @@ function renderMovie1(id) {
     return null;
   }
   return (
-    <MovieA>
     <center>
-     <iframe src={`https://d22sfab2t5o9bq.cloudfront.net/br?bafsd=805970`} width="920" height="120" scrolling="no" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-top-navigation"></iframe>
+<iframe src={`https://d22sfab2t5o9bq.cloudfront.net/br?bafsd=805970`} width="800" height="150" scrolling="no" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-top-navigation"></iframe>
 </center>
-</MovieA>
   );
 }
 
