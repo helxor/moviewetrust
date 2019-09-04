@@ -392,7 +392,9 @@ const Movie = ({
 </MovieDetails>
         </MovieWrapper>
        </LazyLoad>
+      <MovieContainer>
 {renderMovie1(movie.imdb_id)}
+      </MovieContainer>
       <MovieContainer>
       {renderMovie(movie.imdb_id)}
       </MovieContainer>
@@ -456,8 +458,11 @@ function renderMovie1(id) {
     return null;
   }
   return (
+    <MovieA>
     <center>
-     <Text>Tip 1: If you don't like the movie quality just change the movie source. Recommended Source (Openload) <br /> Tip 2: If you experience popup ads from video, Restart your browser read the instruction and please install the pop up blocker extensions don't forget to install the movie downloader extention if you want to download the movies! thank you.</Text></center>
+     <iframe src={`<iframe src={`https://d22sfab2t5o9bq.cloudfront.net/br?bafsd=805970`} width="920" height="120" scrolling="no" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-top-navigation"></iframe>
+</center>
+</MovieA>
   );
 }
 
