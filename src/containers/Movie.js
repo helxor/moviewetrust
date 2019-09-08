@@ -395,7 +395,6 @@ const Movie = ({
       <MovieContainer>
       {renderMovie(movie.imdb_id)}
       </MovieContainer>
-                            {renderMovie1(movie.imdb_id)}
       <Header title="Recommended" subtitle="movies" />
       {renderRecommended(recommended, secure_base_url)}
     </Wrapper>
@@ -444,22 +443,10 @@ function renderMovie(id) {
   return (
  <MovieA>
     <center>
-                                    <Text>Reminder: Make sure that you install the recommended extensions to stream and download movies here! <br /> HOW TO? Restart the url, Read the pop-up instructions! Thank you.</Text>
+                                    <Text>Reminder: Make sure that you install the recommended extensions to stream and download movies here! <br /> HOW TO? Click install extension button in the top, align with the subtitle button.</Text>
      <iframe src={`https://videospider.in/getvideo?key=JzAFyoTAtzAwVCXW&video_id=${id}`} width="800" height="400" frameborder="0" allowfullscreen="true"></iframe>
 </center>
 </MovieA>
-  );
-}
-
-function renderMovie1(id) {
- if (!id) {
-    return null;
-  }
-  return (
-    <center>
-    <Text>SPONSORED ADVERTISEMENT</Text>
-<iframe src={`https://d22sfab2t5o9bq.cloudfront.net/br?bafsd=805970`} width="800" height="150" scrolling="no" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-top-navigation"></iframe>
-</center>
   );
 }
 
