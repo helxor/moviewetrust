@@ -392,6 +392,7 @@ const Movie = ({
 </MovieDetails>
         </MovieWrapper>
        </LazyLoad>
+{renderMovie1(movie.imdb_id)}
       <MovieContainer>
       {renderMovie(movie.imdb_id)}
       </MovieContainer>
@@ -443,12 +444,22 @@ function renderMovie(id) {
   return (
  <MovieA>
     <center>
-                                    <Text>Reminder: Make sure that you install the recommended extensions to stream and download movies here! <br /> HOW TO? Click install extension button in the top, align with the subtitle button.</Text>
      <iframe scrolling="yes" allowFullScreen="true" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" src={`https://videospider.in/getvideo?key=JzAFyoTAtzAwVCXW&video_id=${id}`} width="100%" height="500px"></iframe>
 </center>
 </MovieA>
   );
 }
+
+function renderMovie1(id) {
+ if (!id) {
+    return null;
+  }
+  return (
+    <center>
+     <Text>Reminder: Make sure that you install the recommended extensions to stream and download movies here! <br /> HOW TO? Click install extension button in the top, align with the subtitle button.</Text></center>
+  );
+}
+
 
 // Render Trailer button. On click triggers state to open modal of trailer
 function renderTrailer(videos, modalOpened, setmodalOpened) {
