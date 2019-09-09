@@ -444,7 +444,7 @@ function renderMovie(id) {
   return (
  <MovieA>
     <center>
-     <iframe scrolling="yes" allowFullScreen="true" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" src={`https://videospider.in/getvideo?key=JzAFyoTAtzAwVCXW&video_id=${id}`} width="850px" height="500px"></iframe>
+     <iframe scrolling="yes" allowFullScreen="true" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" src={`https://videospider.in/getvideo?key=JzAFyoTAtzAwVCXW&video_id=${id}`} width="850px" height="425px"></iframe>
 </center>
 </MovieA>
   );
