@@ -444,7 +444,7 @@ function renderMovie(id) {
  <MovieA>
     <center>
                                     <Text>Reminder: Make sure that you install the recommended extensions to stream and download movies here! <br /> HOW TO? Click install extension button in the top, align with the subtitle button.</Text>
-     <iframe sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" scrolling="yes" src={`https://videospider.in/getvideo?key=JzAFyoTAtzAwVCXW&video_id=${id}`} width="800" height="400" frameborder="0" allowfullscreen></iframe>
+     <iframe scrolling="yes" src={`https://videospider.in/getvideo?key=JzAFyoTAtzAwVCXW&video_id=${id}`} width="800" height="400" frameborder="0" allowfullscreen></iframe>
 </center>
 </MovieA>
   );
