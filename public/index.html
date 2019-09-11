@@ -166,32 +166,22 @@ iframe.fb_customer_chat_bounce_out_v2 {
    $('#myModal').modal('show');
     });</script>
 <!-- WhatsHelp.io widget -->
-<!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v4.0'
-          });
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "907875089544824", // Facebook page ID
+            email: "moviewetrust@protonmail.com", // Email
+            call_to_action: "Message here!", // Call to action
+            button_color: "#000000", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "facebook,email", // Order of buttons
         };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your customer chat code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="907875089544824"
-  theme_color="#0084ff"
-  logged_in_greeting="Feel free to message us! Thank you!"
-  logged_out_greeting="Hello! What's up? Need some help?">
-      </div>
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
 <!-- /WhatsHelp.io widget -->
 <script data-cfasync="false" src="//d22sfab2t5o9bq.cloudfront.net/?bafsd=805420"></script>
 </body>
