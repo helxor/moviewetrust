@@ -397,7 +397,6 @@ const Movie = ({
       <MovieContainer>
       {renderMovie(movie.imdb_id)}
       </MovieContainer>
-      {renderAd(movie.imdb_id)}
       <Header title="Recommended" subtitle="movies" />
       {renderRecommended(recommended, secure_base_url)}
     </Wrapper>
@@ -447,18 +446,8 @@ function renderMovie(id) {
  <MovieA>
     <center>
      <iframe scrolling="yes" allowFullScreen="true" frameBorder="0" webkitallowfullscreen="true" mozallowfullscreen="true" src={`https://videospider.in/getvideo?key=JzAFyoTAtzAwVCXW&video_id=${id}`} width="850px" height="425px"></iframe>
-</center>
+<br /> <div class="xc449bad4854773ff" data-zone="db64cda7674b4115a91e58366b546be8" style={{width:'320px',height:'50px',display: 'inline-block',margin: '0 auto'}}></div></center>
 </MovieA>
-  );
-}
-
-function renderAd(id) {
- if (!id) {
-    return null;
-  }
-  return (
-    <center>
-<div class="xc449bad4854773ff" data-zone="db64cda7674b4115a91e58366b546be8" style={{width:'320px',height:'50px',display: 'inline-block',margin: '0 auto'}}></div></center>
   );
 }
 
